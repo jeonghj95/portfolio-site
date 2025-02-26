@@ -1,0 +1,521 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+html,
+body {
+  font-size: 10px;
+  font-family: "EB Garamond",
+    'Noto Sans KR',
+    'Noto Serif KR',
+    'EB Garamond',
+    'Malgun Gothic',
+    sans-serif;
+  position: relative;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  max-width: 1920px;
+  font-size: 1.6rem;
+  color: #000;
+  line-height: 1;
+}
+
+.inner1 {
+  width: calc(100% - 100px);
+  margin: auto;
+  /* padding: 0 20px; */
+}
+
+.inner2 {
+  width: calc(100% - 500px);
+  margin: auto;
+  /* padding: 0 20px;*/
+}
+
+
+
+.readMore1 {
+  width: 180px;
+  height: 50px;
+  margin-top: 60px;
+  /*text-align: center;
+  vertical-align: middle;*/
+  line-height: 2rem;
+  padding: 18px 0px;
+  border: 1px solid #cbb089;
+}
+
+header {
+  width: 100%;
+  margin: auto;
+  height: 10rem;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  line-height: 60px;
+  position: relative;
+  position: fixed;
+  z-index: 10;
+  background: #fff;
+}
+
+
+
+header .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 52px;
+  order: 1;
+  text-align: center;
+}
+
+header .icon {
+  padding-right: 40px;
+}
+
+header .h_left {
+  gap: 40px;
+
+}
+
+header .h_right ul {
+  order: 2;
+  gap: 40px;
+}
+
+header .h_right ul li:nth-of-type(4) span {
+  color: #cbb089;
+  font-size: 2rem;
+}
+
+header .h_right p {
+  order: 3;
+  padding-left: 40px;
+}
+
+/* ART_DESIGN */
+
+.ART_DESIGN {
+  height: 810px;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide a p{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 12;
+  color: #ffffff;
+  text-align-last: left;
+  font-size: 40px;
+  line-height: 40px;
+}
+.ART_DESIGN .chapter1 {
+
+  padding: 330px 0 0 205px;
+  line-height: 80px;
+  color: #fff;
+}
+
+.ART_DESIGN .chapter1 h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.ART_DESIGN .chapter1 p {
+  font-size: 4rem;
+}
+
+.ART_DESIGN .chapter1 p img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* BEST_ART */
+.BEST_ART {
+  text-align: center;
+  padding: 185px 0 150px 0;
+}
+
+.BEST_ART h2 {
+  line-height: 40px;
+  font-size: 2rem;
+  color: #cbb089;
+}
+
+.BEST_ART h3 {
+  margin-bottom: 130px;
+  font-size: 4.5rem;
+  font-weight: normal;
+}
+
+.BEST_ART .B_wrap {
+  gap: 30px;
+
+}
+
+.BEST_ART .B_wrap p {
+  width: calc(100%/ 4);
+}
+
+.BEST_ART div p img {
+
+  width: 330px;
+  height: 450px;
+}
+
+.B_wrap dl {
+  text-align: left;
+
+}
+
+.B_wrap dl dd:nth-of-type(1) {
+  font-size: 2.5rem;
+  padding-top: 30px;
+}
+
+.B_wrap dl dd:nth-of-type(2) {
+  font-size: 1.6rem;
+  padding: 25px 0 20px 0;
+  color: #cbb089;
+}
+
+.B_wrap dl dd:nth-of-type(3) {
+  font-size: 1.6rem;
+  padding-bottom: 30px;
+  color: #ccc;
+}
+
+.B_wrap dl dd:nth-of-type(4) {
+  font-size: 3rem;
+}
+
+.B_wrap dl dd:nth-of-type(4) span {
+  display: inline-block;
+  font-size: 2rem;
+  padding-left: 5px;
+}
+
+/* MD_PICK */
+.MD_PICK {
+  /* width: 100%; */
+  height: 1050px;
+  background: url(../images/pick-bg.jpg) no-repeat;
+  /* background-size: auto; */
+  position: relative;
+  text-align: center;
+  font-weight: normal;
+}
+
+.MD_PICK h2 {
+  padding-top: 95px;
+  line-height: 40px;
+  font-size: 2rem;
+  color: #cbb089;
+}
+
+.MD_PICK h3 {
+  padding-bottom: 65px;
+  font-size: 4.5rem;
+}
+
+.MD_PICK ul {
+  padding-bottom: 75px;
+  justify-content: center;
+  gap: 45px;
+  color: #afafaf;
+}
+
+.MD_PICK .MD_page {
+  width: 1345px;
+  height: 500px;
+  padding: 120px 80px 95px 700px;
+  position: absolute;
+  top: 340px;
+  left: 260px;
+  background: #fff;
+  text-align: left;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, .2);
+}
+
+.MD_PICK .MD_page dd:nth-of-type(1) {
+  color: #cbb089;
+}
+
+.MD_PICK .MD_page dd:nth-of-type(2) {
+  font-size: 3.5rem;
+  font-weight: normal;
+  padding: 20px 0 25px 0;
+}
+
+.MD_PICK .MD_page dd:nth-of-type(3) {
+  /* padding-bottom: 60px; */
+  line-height: 27px;
+  height: 75px;
+  overflow: hidden;
+  color: #afafaf;
+}
+
+.MD_PICK .MD_page:before {
+  display: block;
+  content: "";
+  width: 645px;
+  height: 500px;
+  position: absolute;
+  top: 60px;
+  left: -60px;
+  background: url(https://bxgs.co.kr/data/item/1653898590/7IKw7KeA6riw7J2Y7KeR.png);
+  object-fit: contain;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, .2);
+}
+
+/* NEW_ART*/
+.NEW_ART {
+  padding: 105px 0 160px 0;
+  position: relative;
+}
+
+.NEW_ART h2 {
+  padding-top: 95px;
+  line-height: 40px;
+  font-size: 2rem;
+  color: #cbb089;
+  text-align: center;
+}
+
+.NEW_ART h3 {
+  padding-bottom: 110px;
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.NEW_ART .N_wrap {
+  gap: 32px;
+
+}
+
+.NEW_ART .N_wrap img {
+  width: 445px;
+  height: 622px;
+}
+
+.NEW_ART .N_wrap dl:before {
+  display: block;
+  content: "";
+  width: 390px;
+  height: 90px;
+  background: #ffffff;
+  position: absolute;
+  top: 927px;
+  left: 0px;
+}
+
+.NEW_ART .N_wrap .img2 dl:before {
+  top: 927px;
+  left: 477px;
+}
+
+.NEW_ART .N_wrap .img3 dl:before {
+  top: 927px;
+  left: 954px;
+}
+
+.NEW_ART .N_wrap dl dd:nth-of-type(1) {
+  position: absolute;
+  top: 950px;
+  color: #cbb089;
+}
+
+.NEW_ART .N_wrap dl dd:nth-of-type(2) {
+  font-size: 2.2rem;
+  position: absolute;
+  top: 990px;
+}
+
+.NEW_ART .N_wrap dl dd:nth-of-type(3) {
+  height: 115px;
+  padding-top: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  color: #afafaf;
+}
+
+.NEW_ART .N_wrap p {
+  padding-top: 35px;
+}
+
+/* BAEXANGGALLERY */
+.BAEXANGGALLERY {
+  height: 670px;
+  background: url(../images/gallery-bg.jpg) no-repeat fixed;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  line-height: 75px;
+  padding-top: 160px;
+
+}
+
+.BAEXANGGALLERY .up {
+  padding: 80px 20px;
+  margin: 0 auto;
+  max-width: 1400px;
+  width: calc(100% - 100px);
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  /* background: rgba(255, 255, 255, 0.5); */
+}
+
+.BAEXANGGALLERY p:nth-of-type(2) {
+  /* text-align: center; */
+  /* line-height: 0; */
+  width: 180px;
+  height: 50px;
+  margin: auto;
+  line-height: 0;
+  /* margin-top: 60px; */
+  text-align: center;
+  padding-top: 18px;
+  border: 1px solid #cbb089;
+}
+
+/* .BAEXANGGALLERY::after{
+  display: block;
+  content: ".";
+  width: 1380px;
+  height: 370px;
+  position: absolute;
+ left: 50%;
+  transform: translateX(-50%); 
+margin: auto 
+  position: absolute;
+  top: 145px;
+  left: 200px;
+ padding: 145px 200px;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: -1;}
+ */
+
+.BAEXANGGALLERY h2 {
+  font-size: 3rem;
+}
+
+/* .BAEXANGGALLERY p:nth-child(1){
+  font-size: 2rem;
+} */
+
+/* REVIEW */
+
+.REVIEW {
+  padding-bottom: 250px;
+}
+
+.R_wrap div {
+  width: 450px;
+
+}
+
+.REVIEW h2 {
+  padding-top: 95px;
+  line-height: 40px;
+  font-size: 2rem;
+  color: #cbb089;
+  text-align: center;
+}
+
+.REVIEW h3 {
+  padding-bottom: 110px;
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.R_wrap {
+  gap: 32px;
+
+}
+
+/* .R_wrap .R_img1{
+  display: block;
+  width: 450px;
+  overflow: hidden;
+ } */
+
+.REVIEW img {
+  width: 450px;
+  height: 385px;
+  object-fit: cover;
+}
+
+.R_wrap dl dd:nth-of-type(1) {
+  height: 115px;
+  padding-top: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  color: #afafaf;
+}
+
+/* .R_wrap dl dd:nth-of-type(2){
+  display: inline-block;
+  height: 115px;
+  padding-top: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  color: #afafaf;
+} */
+.R_wrap dl dd:nth-of-type(3) {
+  height: 115px;
+  padding-top: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  color: #afafaf;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  /* height: 265px; */
+  padding: 60px 0;
+  line-height: 45px;
+  background: #000;
+  color: #afafaf;
+}
+
+footer ul {
+  gap: 25px;
+}
+
+footer ul li a {
+  color: #afafaf;
+}
+
+.blank {
+  padding: 0 15px;
+}

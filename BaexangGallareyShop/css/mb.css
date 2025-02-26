@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+
+  .pc,
+  .tb {
+    display: none;
+  }
+
+
+  body {
+    /* width: calc( 100% - 40px);*/
+    max-width: 767px;
+
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  header .icon {
+    padding-right: 0px;
+  }
+
+  footer .footer {
+    width: 100%;
+    height: auto;
+    /* padding: 0; */
+    background: #000;
+  }
+}

@@ -1,0 +1,104 @@
+  /* 미디어 쿼리 */
+@media (max-width: 768px) {
+  html{
+    font-size: 56.25%; 
+   }
+   /* 헤더 사이드메뉴 */
+   .menu{
+    position:fixed;
+     top: -50%;
+     right: -200%;
+    width: 30rem;
+     }
+    .menu.active{
+    right: -30%;
+    }
+   
+    .menu li a:hover:after {
+      width: 80%;
+    }
+
+   
+   /* aboutMe 페이지 */
+   .img {
+    width: 100%;
+    height: 20vh; 
+  }
+  
+  .right {
+    width: 100%; 
+    height: 80vh; 
+   gap: 0.1rem;
+    animation: slideUp 2s ease-in forwards;
+    padding:1rem; 
+  }
+  .right p{
+    font-size: 1.6rem;
+  }
+  .right dt {
+     padding-bottom: 0.4rem;
+  }
+  
+  .right dd {
+    padding-bottom: 0.8rem;
+  }
+  .horizontal-scroll-container {
+    margin: 0;
+    width: 300%;
+    height: 100vh;
+    background: var(--white-color);
+    color: var(--black-color);
+    
+  }
+  
+    
+     
+   .content{
+    flex-direction: column;
+    
+  gap: 2rem;
+  }
+  .projectIntro p{
+    text-align: left;
+  }
+  .projectIntro p br{
+    display: none;
+  }
+  .title{
+    font-size: var(--text-title-20px);
+    margin-bottom: 2rem;
+  }
+  .image{
+    flex-basis: 30%;
+  }
+    
+  .graphic {
+      grid-template-columns: repeat(1, 1fr); 
+  }
+  
+  .graphic li img{
+    width:100%;
+    height:10rem;
+   object-fit: cover;
+   vertical-align: middle;
+  }
+
+  .animalBanner .slick-slide img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%; 
+    min-width: 320px;
+  }
+
+  .right dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 1rem; 
+  }
+
+}

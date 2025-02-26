@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+html,
+body,
+header,
+main,
+footer,
+div,
+article,
+aside,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+section,
+p,
+address,
+form,
+table,
+legend,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+button {
+  border: 0;
+}
+
+/*화면에 보이지 않고, 스크린 리더기 읽어줄수있도록 - ir기법*/
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+button,
+select,
+option {
+  color: inherit;
+  background: none;
+  border: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  /* 크롬 화살표 없애기 */
+  -moz-appearance: none;
+  /* 파이어폭스 화살표 없애기 */
+  appearance: none;
+  /* 화살표 없애기 */
+}

@@ -1,0 +1,118 @@
+  
+  @media (min-width:375px) and (max-width: 768px) {
+    html{
+
+        font-size: 56.25%; /* 1rem = 9px (10px * 0.9) */
+ 
+    }
+  
+    .menu{
+      width: 30rem;
+    }
+    .vedio .s1_txt {
+      width: calc(100% - 4rem);
+      /* height: calc(100%); */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 16rem;
+      padding: 6rem 6rem 0 6rem;
+      position: relative;
+    }
+    .vedio .s1_txt h2 {
+  font-size: var(--txt16-size);
+ 
+}
+    .vedio .s1_txt p:nth-of-type(1) {
+      font-size: var(--txt20-size);
+  
+    }
+    .vedio .s1_txt .btn  {
+      width: calc(100% - 6rem);
+      
+    }
+   
+    .container {
+      grid-template-columns: 1fr; /* 작은 화면: 1열 */
+    }
+    .box {
+        flex-direction: column; /* 이미지와 텍스트를 세로로 정렬 */
+        align-items: flex-start;
+      }
+      .box p span{
+       
+        font-size: var(--txt16-size); 
+      }
+      .box-image {
+        max-width: 100%;
+      }
+      .benefit ul {
+        grid-template-columns: repeat(1, 1fr); /* 중간 화면: 2열 */
+      }
+     
+      .item1,.item2,.item3,.item4 {
+          grid-column: span 1;
+          grid-row: span 1;
+        }
+        .item1 br{
+          
+            display: none;
+         
+        }
+        .benefit ul .item .i_txt  h3 {
+          font-size: var(--txt18-size);
+        
+          padding-bottom: 1rem;
+        }
+        /* .book ul li a .textBox{
+          height: 100%;
+        } */
+        .swiper{
+          width: calc(100% - 15rem);
+        overflow: hidden;
+        }
+        .swiper br{
+          display: none;
+        }
+        .swiper-wrapper{
+          width: 100%;
+          height: 100%;
+        }
+        .swiper-slide img{
+         
+          height: auto;
+    object-fit: cover;
+    
+        }
+        .swiper-slide div{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 3rem;
+        }
+        
+        .swiper-slide h2 {
+       padding: 0;
+        }
+        .swiper-slide div p:nth-of-type(1) {
+          font-size: var(--txt20-size);
+          font-weight: bold;
+          padding:1rem 0 ;
+          line-height: 4rem;
+        }
+        .swiper-slide .mg{
+          margin-bottom: 1rem;
+        }
+        footer{
+          padding: 2rem;
+        }
+        footer .fWrap {
+          gap: 2rem;
+          flex-direction: column; 
+        
+        }
+        footer ul{
+          gap: 1rem;
+        }
+  }
