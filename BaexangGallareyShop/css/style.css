@@ -503,6 +503,7 @@ text-align: center;
   padding-top: 20px;
   position: relative;
 }
+/* 버튼튼 */
 .readMore2{
   padding-left: 40px;
 
@@ -519,7 +520,7 @@ top: 80%;
   display: inline-block;
   content: "";
   background: #cbb089;  
-  width: 15%;
+  width: 36px;
   height: 1px;
 }
 .readMore2 a::after{
@@ -541,7 +542,7 @@ animation: move 1s infinite alternate;
     left: 0; 
   }
   100% {
-    left: 12%; 
+    left: 36px; 
   }
 }
 
@@ -644,43 +645,7 @@ animation: move 1s infinite alternate;
   position: relative;
   padding: 30px 0 0 40px;
 }
-.R_box .readMore2 a{
-  display: block;
-  width: 100%;
-}
-.R_box .readMore2 a::before,
-.R_box .readMore2 a::after{
-  position: absolute;
-left:0;
-  display: inline-block;
-  content: "";
-  background: #cbb089;  
-  width: 10%;
-  height: 1px;
-}
-.R_box .readMore2 a::after{
-width: 0;
-height: 0;
-left: 0;
-background: #ffffff;  
-}
 
-.R_box .readMore2 a:hover::after{
-  width: 8px;
-height: 8px;
-  transition: all .3s ;
-animation: move1 .5s infinite alternate;
-
-}
-
-@keyframes move1 {
-  0% {
-    left: 0; 
-  }
-  100% {
-    left: 8%; 
-  }
-}
 /* footer */
 footer {
   width: 100%;
