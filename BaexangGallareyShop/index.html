@@ -7,44 +7,44 @@
   <title>백상갤러리샵</title>
   <link rel="icon" type="image/png" href="images/title_logo.png">
   <!-- css -->
-  <link rel="stylesheet" href="css/default.css">
-  <link rel="stylesheet" href="css/style.css" media="screen and (max-width:1920px)">
-  <link rel="stylesheet" href="css/mb.css" media="screen and (max-width:767px)">
-  <link rel="stylesheet" href="css/tb.css" media="screen and (max-width:1440px)">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tb.css" media="screen and (max-width:1440px)">
+  <link rel="stylesheet" href="css/mb.css" media="screen and (max-width:767px)">
   <!-- 스크립트 -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
   <div id="wrap">
     <header class="flex">
 
-      <h1 class="logo"><a href=""><img src="images/logo.png" alt="baexang logo"></a></h1>
+      <h1 class="logo"><a href="#"><img src="images/logo.png" alt="baexang logo"></a></h1>
       <nav class="gnb flex">
         <h2 class="blind">주메뉴</h2>
-        <p class="icon"><a href=""><img src="images/ico-header-menu.png" alt="전체메뉴"></a></p>
+        <p class="icon"><a href="#"><img src="images/ico-header-menu.png" alt="전체메뉴"></a></p>
         <ul class="h_left flex pc">
-          <li><a href="">베스트</a></li>
-          <li><a href="">신상품</a></li>
-          <li><a href="">사진작품</a></li>
-          <li><a href="">그림작품</a></li>
-          <li><a href="">작가별</a></li>
-          <li><a href="">장르별</a></li>
-          <li><a href="">주제별</a></li>
+          <li><a href="#">베스트</a></li>
+          <li><a href="#">신상품</a></li>
+          <li><a href="#">사진작품</a></li>
+          <li><a href="#">그림작품</a></li>
+          <li><a href="#">작가별</a></li>
+          <li><a href="#">장르별</a></li>
+          <li><a href="#">주제별</a></li>
         </ul>
       </nav>
       <div class="h_right flex">
         <ul class="flex pc">
-          <li><a href="">로그인</a></li>
-          <li><a href="">회원가입</a></li>
-          <li><a href="">주문조회</a></li>
-          <li><a href="">장바구니<span>0</span></a></li>
-          <li><a href="">고객센터</a></li>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">주문조회</a></li>
+          <li><a href="#">장바구니<span>0</span></a></li>
+          <li><a href="#">고객센터</a></li>
         </ul>
-        <p><a href=""><img src="images/ico-header-search.png" alt="검색"></a></p>
+        <p><a href="#"><img src="images/ico-header-search.png" alt="검색"></a></p>
       </div>
 
     </header>
@@ -55,146 +55,158 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="">
+              <a href="#">
                 <img src="images/maindata128056_0.jpg" alt="BAEXANG GALLERY SHOP
               GRAND OPEN">
+              <div>
+              <h3>Art & Design</h3>
                 <p>BAEXANG GALLERY SHOP<br>
                   GRAND OPEN</p>
+                </div>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="">
+              <a href="#">
                 <img src="images/maindata131255_0.jpg" alt="
               GRAND OPEN">
+              <div>
+              <h3>BAEXANG GALLERY</h3>
                 <p>GRAND OPEN</p>
+              </div>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="">
+              <a href="#">
                 <img src="images/maindata131279_0.jpg" alt="BAEXANG">
+                <div>
+                <h3>Art&#183;Design in</h3>
                 <p>BAEXANG</p>
+              </div>
               </a>
             </div>
           </div>
-          <div class="swiper-button-next blind"></div>
-          <div class="swiper-button-prev blind"></div>
         </div>
       </section>
       
       <section class="BEST_ART inner2">
-        <h2>백상에서 가장 인기있는 작품을 소개합니다.</h2>
-        <h3>BEST ART</h3>
-        <div class="B_wrap flex ">
-
-          <div class="picture">
-            <p><a href=""><img src="https://bxgs.co.kr/data/item/1654133549/656R6re466Oo7JWE64uk66as.jpg" alt=""></a>
-            </p>
-            <dl>
-              <dt class="blind">작품명</dt>
-              <dd><a href="">아를의 랑그루아 다리</a></dd>
-              <dt class="blind">화가명</dt>
-              <dd>빈센트 반 고흐</dd>
-              <dt class="blind">작품크기</dt>
-              <dd>30.0cm x 30.0cm</dd>
-              <dt class="blind">작품가격</dt>
-              <dd>38,200<span>원</span></dd>
-            </dl>
+        <h2 class="title">백상에서 가장 인기있는 작품을 소개합니다.</h2>
+        <h3 class="sub_title">BEST ART</h3>
+        <!-- 슬라이드 페이지 -->
+        <div class="swiper artSwiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="https://bxgs.co.kr/data/item/1654133549/656R6re466Oo7JWE64uk66as.jpg" alt="아를의 랑그루아 다리">
+                  <dl>
+                    <dt class="blind">작품명</dt>
+                    <dd>아를의 랑그루아 다리</dd>
+                    <dt class="blind">화가명</dt>
+                    <dd>빈센트 반 고흐</dd>
+                    <dt class="blind">작품크기</dt>
+                    <dd>30.0cm x 30.0cm</dd>
+                    <dt class="blind">작품가격</dt>
+                    <dd>38,200<span>원</span></dd>
+                  </dl>
+              </div>
+              <div class="swiper-slide">
+                  <img src="https://bxgs.co.kr/data/item/1653879158/7YKk7Iqk.jpg" alt="키스">
+                  <dl>
+                    <dt class="blind">작품명</dt>
+                    <dd><a href="#">키스</a></dd>
+                    <dt class="blind">화가명</dt>
+                    <dd>구스타프 클림트</dd>
+                    <dt class="blind">작품크기</dt>
+                    <dd>30.0cm x 30.0cm</dd>
+                    <dt class="blind">작품가격</dt>
+                    <dd>36,500<span>원</span></dd>
+                  </dl>
+              </div>
+              <div class="swiper-slide">
+                  <img src="https://bxgs.co.kr/data/item/1652406531/thum04.png" alt="앙티브의 아침">
+                  <dl>
+                    <dt class="blind">작품명</dt>
+                    <dd><a href="#">앙티브이 아침</a></dd>
+                    <dt class="blind">화가명</dt>
+                    <dd>클로드 모네</dd>
+                    <dt class="blind">작품크기</dt>
+                    <dd>30.0cm x 30.0cm</dd>
+                    <dt class="blind">작품가격</dt>
+                    <dd>35,700<span>원</span></dd>
+                  </dl>
+              </div>
+              <div class="swiper-slide">
+                  <img src="https://bxgs.co.kr/data/item/1652406511/thum05.png" alt="아테제 호수">
+                  <dl>
+                    <dt class="blind">작품명</dt>
+                    <dd><a href="#">아테제 호수</a></dd>
+                    <dt class="blind">화가명</dt>
+                    <dd>구스타프 클림트</dd>
+                    <dt class="blind">작품크기</dt>
+                    <dd>30.0cm x 30.0cm</dd>
+                    <dt class="blind">작품가격</dt>
+                    <dd>42,200<span>원</span></dd>
+                  </dl>
+              </div>
+              <div class="swiper-slide">
+                  <img src="https://bxgs.co.kr/data/item/1652406261/thum08.png" alt="지베르니 봄의 효과">
+                  <dl>
+                    <dt class="blind">작품명</dt>
+                    <dd><a href="#">지베르니 봄의 효과</a></dd>
+                    <dt class="blind">화가명</dt>
+                    <dd>클로드 모네</dd>
+                    <dt class="blind">작품크기</dt>
+                    <dd>30.0cm x 30.0cm</dd>
+                    <dt class="blind">작품가격</dt>
+                    <dd>36,500<span>원</span></dd>
+                  </dl>
+              </div>
+            </div>
           </div>
-          <div class="picture">
-            <p><a href=""><img src="https://bxgs.co.kr/data/item/1653879158/7YKk7Iqk.jpg" alt=""></a></p>
-            <dl>
-              <dt class="blind">작품명</dt>
-              <dd><a href="">키스</a></dd>
-              <dt class="blind">화가명</dt>
-              <dd>구스타프 클림트</dd>
-              <dt class="blind">작품크기</dt>
-              <dd>30.0cm x 30.0cm</dd>
-              <dt class="blind">작품가격</dt>
-              <dd>36,500<span>원</span></dd>
-            </dl>
-          </div>
-          <div class="picture tb">
-            <p><a href=""><img src="https://bxgs.co.kr/data/item/1652406531/thum04.png" alt=""></a></p>
-            <dl>
-              <dt class="blind">작품명</dt>
-              <dd><a href="">앙티브이 아침</a></dd>
-              <dt class="blind">화가명</dt>
-              <dd>클로드 모네</dd>
-              <dt class="blind">작품크기</dt>
-              <dd>30.0cm x 30.0cm</dd>
-              <dt class="blind">작품가격</dt>
-              <dd>35,700<span>원</span></dd>
-            </dl>
-          </div>
-          <div class="picture pc">
-            <p><a href=""><img src="https://bxgs.co.kr/data/item/1652406511/thum05.png" alt=""></a></p>
-            <dl>
-              <dt class="blind">작품명</dt>
-              <dd><a href="">아테제 호수</a></dd>
-              <dt class="blind">화가명</dt>
-              <dd>구스타프 클림트</dd>
-              <dt class="blind">작품크기</dt>
-              <dd>30.0cm x 30.0cm</dd>
-              <dt class="blind">작품가격</dt>
-              <dd>42,200<span>원</span></dd>
-            </dl>
-          </div>
-          <!-- <div> 다음 슬라이드
-  <p><a href=""><img src="https://bxgs.co.kr/data/item/1652406261/thum08.png" alt=""></a></p>
-<dl>
-  <dt class="blind">작품명</dt>
-  <dd><a href="">지베르니 봄의 효과</a></dd>
-  <dt class="blind">화가명</dt>
-  <dd>클로드 모네</dd>
-  <dt class="blind">작품크기</dt>
-  <dd>30.0cm x 30.0cm</dd>
-  <dt class="blind">작품가격</dt>
-  <dd>36,500<span>원</span></dd>
-</dl>
-</div> -->
-        </div>
+          <!-- 네비게이션 버튼 -->
+               <div class="swiper-button-next art-next"></div>
+               <div class="swiper-button-prev art-prev"></div>
+               <!-- 페이지네이션 -->
+               <div class="swiper-pagination art-pagination"></div>
+           
       </section>
 
       <section class="MD_PICK inner1">
-        <h2>백상 큐레이터가 선정한 추천 작품을 만나보세요.</h2>
-        <h3>MD PICK</h3>
+        <h2 class="title">백상 큐레이터가 선정한 추천 작품을 만나보세요.</h2>
+        <h3 class="sub_title">MD PICK</h3>
         <ul class="flex">
-          <li><a href="">그림작품</a></li>
-          <li><a href="">사진작품</a></li>
+          <li><a href="#">그림작품</a></li>
+          <li><a href="#">사진작품</a></li>
         </ul>
         <div class="MD_page">
+          <img src="https://bxgs.co.kr/data/item/1653898590/7IKw7KeA6riw7J2Y7KeR.png" alt="산지기의 집">
+         <div class="MD_txt flex">
           <dl>
             <dt class="blind">화가명</dt>
             <dd>구스타프 클림트</dd>
             <dt class="blind">작품명</dt>
             <dd>산지기의 집</dd>
             <dt class="blind">작품설명</dt>
-            <dd class="story">구스타프 클림트의 산지기의 집(House in the garden)입니다. 구스타프 클림트는<br>
-              오스트리아의 화가. 아르누보 계열의 장식적인 양식을 선호하며 전통적인 미술에 대항해<br>
+            <dd class="story">구스타프 클림트의 산지기의 집(House in the garden)입니다. 구스타프 클림트는
+              오스트리아의 화가. 아르누보 계열의 장식적인 양식을 선호하며 전통적인 미술에 대항해
               ‘빈 분리파’를 결성했다. 관능적인 여성 이미지와 찬란한 황금빛, 화려한 색채를 특징으로 하고 성(性)과 사랑, 죽음에 대한 알레고리로 많은 사람들을 매혹시켰다.</dd>
           </dl>
-          <p class="readMore1"><a href="">Read More</a></p>
+          <p class="readMore1">
+            <a href="#" aria-label="더 보기">Read More
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </p>
         </div>
-
-        <!--tab1-->
-        <!--
-<div>
-<p><img src="https://bxgs.co.kr/data/item/1654133092/6rOg7Z2Q67K867Kg64qU64aN67aA.jpg" alt=""></p>
-<div>
-<h3>빈센트 반 고흐</h3>
-<h4>수확하는 사람</h4>
-<p>빈센트 반 고흐는 장 프랑수아 밀레(Jean Francois Millet)의 &lt;씨 뿌리는 사람&gt;(1850) 및 &lt;이삭 줍는 여인들-이삭줍기&gt;(1857)와 같은 작품들에서 영감을 받아 농촌에서 행해지는 일들에 관심이 많았고, 그와 관련한 다수의 연작들을 그렸다. 들에서 수확을 하고 있는 농부의 모습과 더불어 수확기의 황금빛 밀밭의 색채가 내는 효과가 보는 이의 시선을 사로잡는다.</p>
-<p><a href="">Read More</a></p>
-</div>
-</div>tab2-->
-
+        </div>
       </section>
       <section class="NEW_ART inner2">
-        <h2>백상과 함께하는 새로운 작품을 소개합니다.</h2>
-        <h3>NEW ART</h3>
+        <h2 class="title">백상과 함께하는 새로운 작품을 소개합니다.</h2>
+        <h3 class="sub_title">NEW ART</h3>
         <div class="N_wrap flex">
-          <div class="img1">
-            <img src="https://bxgs.co.kr/data/item/1654135291/67KE64W87J2Y7YWM65287Iqk.jpg" alt="">
+          <div class="N_content">
+            <p class="box"><img src="https://bxgs.co.kr/data/item/1654135291/67KE64W87J2Y7YWM65287Iqk.jpg" alt="베르농의 테라스"></p>
+            <div class="box_con">
             <dl>
               <dt class="blind">화가명</dt>
               <dd>피에르 보나르</dd>
@@ -203,11 +215,13 @@
               <dt class="blind">작품설명</dt>
               <dd>강렬한 색채와 평면성이 강조된 뚜렷한 윤곽선, 평평한 색면 추구에 열정을 쏟았던 '나비파'의 유산을 느낄 수 있다.</dd>
             </dl>
-            <p><a href="">Read More</a></p>
+            <p class="readMore2"><a href="#">Read More</a></p>
           </div>
-          <div class="img2">
-            <img src="https://bxgs.co.kr/data/item/1654134107/67OE6rO87IKs7J207ZSE65s7Iqk64KY66y06rCA7J6I64qU6ri4.jpg"
-              alt="">
+          </div><!--//N_content-->
+          <div class="N_content">
+            <p class="box"><img src="https://bxgs.co.kr/data/item/1654134107/67OE6rO87IKs7J207ZSE65s7Iqk64KY66y06rCA7J6I64qU6ri4.jpg"
+              alt="밤의 프로방스 시골길"></p>
+              <div class="box_con">
             <dl>
               <dt class="blind">화가명</dt>
               <dd>빈센트 반 고흐</dd>
@@ -217,72 +231,88 @@
               <dd>1889년 5월부터 1890년 5월 생레미에서 머문 기간 동안의 작품들은 반 고흐 특유의 소용돌이치며 꿈틀대는 선들로 가득했다. 이 시기 반 고흐의 마음을 사로잡은 소재는 사이프러스
                 나무였다.</dd>
             </dl>
-            <p><a href="">Read More</a></p>
+            <p class="readMore2"><a href="#">Read More</a></p>
           </div>
-          <div class="img3 pc">
-            <img src="	https://bxgs.co.kr/data/item/1654129940/shutterstock_423234622.jpg" alt="">
+          </div><!--//N_content-->
+          <div class="N_content img3">
+            <p class="box"><img src="https://bxgs.co.kr/data/item/1654129940/shutterstock_423234622.jpg" alt="양산을 든 여인"></p>
+           <div class="box_con">
             <dl>
               <dt class="blind">화가명</dt>
-              <dd>클로드 모네</dd>
+              <dd>카미유와 장</dd>
               <dt class="blind">작품명</dt>
-              <dd>양산을 든 여인 - 카미유와 장</dd>
+              <dd>양산을 든 여인</dd>
               <dt class="blind">작품설명</dt>
               <dd>마네의 도움으로 1871년 모네는 아르장퇴유에 거처를 마련하였다. 양산을 든 여인(1875)는 1875년 여름에서 1876년 사이에 그린 일련의 작품 시리즈 가운데 하나이다. 이때
                 그린 시리즈물의 풍경은 파리 외곽인 아르장퇴유의 두 번째 집 주위의 정원을 묘사하고 있다.</dd>
             </dl>
-            <p><a href="">Read More</a></p>
+            <p class="readMore2"><a href="#">Read More</a></p>
           </div>
+          </div><!--//N_content-->
         </div> <!--//그림전체-->
       </section>
       <section class="BAEXANGGALLERY inner1">
         <div class="up">
-          <h2>BAEXANG GALLERY</h2>
+          <h2>BAEXANG <span>GALLERY</span></h2>
           <p>백상 갤러리에서 다양한 그림을 직접 감상하시고 구입하세요.</p>
-          <p class="readMore1"><a href="">Read More</a></p>
+          <p class="readMore1">
+            <a href="#" aria-label="더 보기">Read More
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </p>
         </div>
       </section>
 
       <section class="REVIEW inner2">
-        <h2>백상의 작품을 이용한 고객들의 실제 후기입니다.</h2>
-        <h3>REVIEW</h3>
+        <h2 class="title">백상의 작품을 이용한 고객들의 실제 후기입니다.</h2>
+        <h3 class="sub_title">REVIEW</h3>
         <div class="R_wrap flex">
-          <div class="R_img1 pc">
-            <img src="https://bxgs.co.kr/data/item/1652406511/thum05.png" alt="">
+          <div class="R_box pc">
+            <img src="https://bxgs.co.kr/data/item/1652406511/thum05.png" alt="아테제 호수">
             <dl>
+              <div class="flex">
               <dt class="blind">작품명</dt>
               <dd>아테제 호수</dd>
               <dt class="blind">화가명</dt>
               <dd>구스타프 클림트</dd>
+            </div>
               <dt class="blind">고객리뷰내용</dt>
-              <dd>배송 포장 모두 만족합니다.
+              <dd class="story">배송 포장 모두 만족합니다.
                 그림 퀄리티는 말할 것도 없고, 색상도 선명하고 무광이라 반사도 적은 것 같아요</dd>
             </dl>
-            <p><a href="">Read More</a></p>
+            <p class="readMore2 btn"><a href="#">Read More</a></p>
           </div>
-          <div class="R_img2">
-            <img src="https://bxgs.co.kr/data/item/1653879158/7YKk7Iqk.jpg" alt="">
+          <div class="R_box">
+            <img src="https://bxgs.co.kr/data/item/1653879158/7YKk7Iqk.jpg" alt="키스스">
             <dl>
+              <div class="flex">
               <dt class="blind">작품명</dt>
               <dd>키스</dd>
               <dt class="blind">화가명</dt>
               <dd>구스타프 클림트</dd>
+            </div>
               <dt class="blind">고객리뷰내용</dt>
-              <dd>생각했던 것보다 약간 어두운느낌은 있지만, 식탁 옆 벽에 거니까 크기도 적당하고 퀄리티도 아주 좋습니다. </dd>
+              <dd class="story">생각했던 것보다 약간 어두운느낌은 있지만, 식탁 옆 벽에 거니까 크기도 적당하고 퀄리티도 아주 좋습니다. </dd>
             </dl>
-            <p><a href="">Read More</a></p>
+            <p class="readMore2 btn"><a href="#">Read More</a></p>
           </div>
-          <div class="R_img3 tb">
-            <img src="https://bxgs.co.kr/data/item/1654135804/7JWE66qs65Oc64KY66y0.jpg" alt="">
+          <div class="R_box">
+            <img src="https://bxgs.co.kr/data/item/1654135804/7JWE66qs65Oc64KY66y0.jpg" alt="꽃 피는 아몬드 나무">
             <dl>
+              <div class="flex">
               <dt class="blind">작품명</dt>
               <dd>꽃 피는 아몬드 나무</dd>
               <dt class="blind">화가명</dt>
               <dd>빈센트 반 고흐</dd>
+            </div>
               <dt class="blind">고객리뷰내용</dt>
-              <dd>이사하고 집이 너무 휑한거 같아서 이번 기회에 작품 하나 샀는데 그림 하나도 분위기가 너무 달라졌어요.
+              <dd class="story">이사하고 집이 너무 휑한거 같아서 이번 기회에 작품 하나 샀는데 그림 하나도 분위기가 너무 달라졌어요.
               </dd>
             </dl>
-            <p><a href="">Read More</a></p>
+            <p class="readMore2 btn"><a href="#">Read More</a></p>
           </div>
         </div>
       </section>
@@ -290,9 +320,9 @@
     <footer class="footer">
       <div class="F_wrap inner2">
         <ul class="flex">
-          <li><a href="">개인정보처리방침</a></li>
-          <li><a href="">이용약관</a></li>
-          <li><a href="">회사소개</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">회사소개</a></li>
         </ul>
         <address>
           <p>

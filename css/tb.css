@@ -182,11 +182,14 @@ vertical-align:bottom;
 .image{
   flex-basis: 50%;
 }
+/* design */
   .graphic {
     grid-template-columns: repeat(3, 2fr);
   }
+  /* footer */
   .f_wrap{
     flex-direction: column;
+    gap: 4rem;
   }
 }
 

@@ -234,11 +234,7 @@
 .introText h3{
   font-size: 4rem;
 }
-/* .introText p:nth-of-type(1){
-  font-size: var(--text-title-20px);
-  line-height:200%;
 
-} */
 .scrollNotice {
   position: absolute;
   left: 50%;
@@ -314,6 +310,7 @@
    margin: 0;
    color: var(--black-color);
    background:var(--white-color);
+
   
   }
   
@@ -321,7 +318,7 @@
   .aboutWrap{
     position: sticky;
     top: 0;
-    width: calc(100% - 4rem);
+    width: calc(100% - 8rem);
     height: 100vh;
     gap: 4rem;
     justify-content: space-evenly;
@@ -346,6 +343,7 @@
     justify-content: space-evenly;
    gap: 2rem;
     animation: slideUp 2s ease-in forwards;
+
   }
 
 
@@ -356,6 +354,7 @@
  font-size: var(--text-subtitle-18px);
  font-weight: bold;
  line-height: 200%;
+
 }
 
 
@@ -747,6 +746,7 @@ object-fit: contain;
 }
 
 .footer .f_wrap {
+  justify-content: space-between;
   gap: 8rem;
   padding: 6rem 0;
 }
@@ -765,6 +765,13 @@ object-fit: contain;
 .footer .f_wrap address p strong {
   font-size: 1.6rem;
   font-weight: normal;
+}
+.icon{
+  gap: 0.2rem;
+}
+.icon img{
+  width: 3.2rem;
+  height: 3.2rem;
 }
   
 /* 화살표 버튼 */
